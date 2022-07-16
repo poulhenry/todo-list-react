@@ -1,0 +1,86 @@
+.task {
+  padding: 16px;
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 2px solid var(--gray-400);
+  width: 40rem;
+  height: 4.5rem;
+  overflow: hidden;
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task input {
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  width: 18px;
+  height: 18px;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.task input:hover {
+  background: var(--blue-dark);
+}
+
+.task input::after {
+  content: '';
+  width: 5px;
+  height: 6px;
+  right: 6px;
+  top: 4px;
+  position: absolute;
+  border-right: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--gray-100);
+  transform: rotate(38deg);
+  z-index: 100;
+  opacity: 0;
+}
+
+.task input:checked {
+  background: var(--purple-dark);
+  border: 0;
+}
+
+.task input:checked:hover {
+  background: var(--purple);
+}
+
+.task input:checked::after {
+  opacity: 1;
+}
+
+.task div p {
+  color: var(--gray-100);
+}
+
+.task button {
+  background: transparent;
+  padding: 5px 6px;
+  cursor: pointer;
+  color: var(--gray-300);
+  border: 0;
+}
+
+.task button:hover {
+  background: var(--gray-400);
+  border-radius: 8px;
+  color: var(--danger);
+}
+
+.taskChecked {
+  text-decoration: line-through;
+  color: var(--gray-200);
+}

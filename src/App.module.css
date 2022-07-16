@@ -1,0 +1,102 @@
+.container {
+  margin: 0 auto;
+  max-width: 46rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container ul {
+  margin-top: 25px;
+}
+
+.newTask {
+  margin-top: -25px;
+  max-width: 40rem;
+}
+
+.newTask input {
+  padding: 15px;
+  width: 35rem;
+  background: var(--gray-500);
+  border-radius: 5px;
+  border: 1px solid var(--gray-700);
+  color: var(--gray-100);
+}
+
+.newTask input:focus {
+  border: 1px solid var(--purple-dark);
+}
+
+.newTask button {
+  padding: 15px;
+  color: var(--gray-100);
+  background: var(--blue-dark);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.newTask button:hover {
+  background: var(--blue);
+}
+
+.info {
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.info div {
+  font-size: 0.875rem;
+}
+
+.info div > span {
+  border-radius: 10px;
+  color: var(--gray-200);
+  background: var(--gray-400);
+  padding: 2px 8px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.infoCreated strong {
+  color: var(--blue);
+  margin-right: 8px;
+}
+
+.infoDone strong {
+  color: var(--purple);
+  margin-right: 8px;
+}
+
+.listTasks {
+  margin-top: 25px;
+  border-radius: 5px;
+  border-top: 1px solid var(--gray-300);
+  width: 40rem;
+  height: 18rem;
+  color: var(--gray-300);
+
+}
+
+.contentEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.listTasks div img {
+  margin-bottom: 16px;
+}
+
+.listTasks div p {
+  font-size: 1rem;
+}
